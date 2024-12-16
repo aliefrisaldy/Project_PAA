@@ -1,0 +1,46 @@
+#Nama : Muhammad Alif Risaldy
+#NIM : F55123055
+#Kelas : Informatika B
+#Projek UAS PAA
+
+
+Pada kasus ini, kita menganalisis waktu eksekusi dari sebuah fungsi yang memeriksa apakah semua elemen dalam sebuah array adalah unik atau tidak. 
+Untuk setiap ukuran array n yang berbeda, dilakukan lima percobaan dengan array yang dihasilkan secara acak. Setiap percobaan mengukur waktu yang dibutuhkan 
+oleh fungsi tersebut untuk menyelesaikan tugasnya. Hasil waktu eksekusi ini kemudian digunakan untuk menghitung dua metrik yang penting: worst case dan 
+average case. 
+
+Worst case dihitung dengan memilih waktu eksekusi terlama dari kelima percobaan yang dilakukan untuk setiap ukuran array n. Misalnya, untuk n = 100, lima 
+waktu eksekusi yang tercatat adalah sekitar [4.3 × 10^-6, 3.6 × 10^-6, 3.4 × 10^-6, 1.82 × 10^-5, 1.59 × 10^-5]. Dari nilai-nilai ini, waktu eksekusi terlama 
+adalah 1.82 × 10^-5 detik, yang kemudian dibulatkan menjadi 0.000018 detik untuk laporan worst case. Proses ini diulang untuk setiap ukuran array yang 
+berbeda, menghasilkan angka-angka yang menunjukkan waktu terlama yang dibutuhkan dalam lima percobaan.
+
+Sedangkan average case dihitung dengan mengambil rata-rata dari kelima waktu eksekusi yang tercatat untuk setiap ukuran array n. Dengan menggunakan data 
+yang sama untuk n = 100, kita menghitung rata-rata dari lima waktu eksekusi tersebut: average = (4.3 × 10^-6 + 3.6 × 10^-6 + 3.4 × 10^-6 + 1.82 × 10^-5 + 
+1.59 × 10^-5) / 5, yang menghasilkan nilai sekitar 9 × 10^-6 detik, atau 0.000009 detik untuk average case. Rata-rata waktu ini memberikan gambaran umum 
+tentang kinerja rata-rata fungsi tersebut, mengurangi dampak dari variasi yang mungkin terjadi dalam percobaan.
+
+Berikut adalah hasil waktu eksekusi, serta perhitungan worst case dan average case untuk setiap ukuran array n:
+- n = 100: Waktu Eksekusi = [4.3e-06, 3.6e-06, 3.4e-06, 1.82e-05, 1.59e-05], Worst Case = 0.000018 detik, Average Case = 0.000009 detik
+- n = 150: Waktu Eksekusi = [9.6e-06, 7.8e-06, 8.6e-06, 8.9e-06, 1.09e-05], Worst Case = 0.000011 detik, Average Case = 0.000009 detik
+- n = 200: Waktu Eksekusi = [1.46e-05, 1.86e-05, 1.6e-05, 2.6e-05, 1.56e-05], Worst Case = 0.000026 detik, Average Case = 0.000018 detik
+- n = 250: Waktu Eksekusi = [1.16e-05, 1.66e-05, 1.95e-05, 2.3e-05, 1.64e-05], Worst Case = 0.000023 detik, Average Case = 0.000017 detik
+- n = 300: Waktu Eksekusi = [3.0e-05, 1.94e-05, 3.25e-05, 2.37e-05, 1.82e-05], Worst Case = 0.000033 detik, Average Case = 0.000025 detik
+- n = 350: Waktu Eksekusi = [1.46e-05, 2.69e-05, 3.1e-05, 2.24e-05, 1.82e-05], Worst Case = 0.000031 detik, Average Case = 0.000023 detik
+- n = 400: Waktu Eksekusi = [1.41e-05, 2.05e-05, 2.62e-05, 2.53e-05, 2.34e-05], Worst Case = 0.000026 detik, Average Case = 0.000022 detik
+- n = 500: Waktu Eksekusi = [8.05e-05, 3.24e-05, 2.72e-05, 1.84e-05, 2.59e-05], Worst Case = 0.000080 detik, Average Case = 0.000037 detik
+
+Hasil yang didapat menunjukkan bahwa seiring dengan bertambahnya ukuran array n, baik worst case maupun average case cenderung mengalami peningkatan. 
+Namun, peningkatan ini tidak selalu bersifat konsisten. Contohnya, untuk n = 200, waktu worst case mencapai 0.000026 detik, sedangkan untuk n = 250, 
+waktu worst case justru lebih rendah, yakni 0.000023 detik. Variasi seperti ini dapat terjadi karena beberapa faktor, seperti pengaruh data acak yang 
+dihasilkan dan efisiensi struktur data atau operasi yang dilakukan dalam fungsi.
+
+Perbedaan ini menunjukkan bahwa bertambahnya ukuran array n tidak selalu menjamin peningkatan waktu eksekusi secara langsung, terutama dalam kondisi 
+yang melibatkan data acak. Akan tetapi, jika dilihat secara umum, terdapat tren peningkatan waktu eksekusi seiring dengan bertambahnya ukuran array, 
+baik untuk worst case maupun average case. Misalnya, untuk n = 500, waktu worst case mencapai 0.000080 detik, sementara average case berada di sekitar 
+0.000037 detik. Ini menunjukkan bahwa pada ukuran array yang lebih besar, meskipun ada fluktuasi di beberapa titik, waktu eksekusi secara keseluruhan 
+akan meningkat.
+
+Dengan demikian, perhitungan worst case dan average case tetap memberikan wawasan penting mengenai performa fungsi. Worst case menunjukkan batas atas 
+waktu yang dibutuhkan dalam kondisi terburuk, sedangkan average case memberikan gambaran yang lebih representatif tentang waktu eksekusi rata-rata 
+yang mungkin terjadi dalam praktik. Variasi yang terjadi antar ukuran array menegaskan pentingnya melakukan pengukuran berkali-kali untuk mendapatkan 
+gambaran yang lebih akurat terkait performa suatu algoritma atau fungsi.
