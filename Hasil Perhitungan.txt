@@ -40,7 +40,4 @@ baik untuk worst case maupun average case. Misalnya, untuk n = 500, waktu worst 
 0.000037 detik. Ini menunjukkan bahwa pada ukuran array yang lebih besar, meskipun ada fluktuasi di beberapa titik, waktu eksekusi secara keseluruhan 
 akan meningkat.
 
-Dengan demikian, perhitungan worst case dan average case tetap memberikan wawasan penting mengenai performa fungsi. Worst case menunjukkan batas atas 
-waktu yang dibutuhkan dalam kondisi terburuk, sedangkan average case memberikan gambaran yang lebih representatif tentang waktu eksekusi rata-rata 
-yang mungkin terjadi dalam praktik. Variasi yang terjadi antar ukuran array menegaskan pentingnya melakukan pengukuran berkali-kali untuk mendapatkan 
-gambaran yang lebih akurat terkait performa suatu algoritma atau fungsi.
+
